@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <h1>Flexbox Generator</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <h2>Container Properties</h2>
+                <div id="containerControls"></div>
+            </div>
+            
+            <div class="control-group">
+                <h2>Item Properties</h2>
+                <div id="itemControls"></div>
+                <div class="item-buttons">
+                    <button id="addItem"><i class="fas fa-plus"></i> Add Item</button>
+                    <button id="removeItem"><i class="fas fa-minus"></i> Remove Item</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="preview">
+            <h2>Preview</h2>
+            <div class="flex-container" id="flexContainer">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </div>
+        
+        <div class="output">
+            <h2>Generated Code</h2>
+            
+            <div class="code-tabs">
+                <button class="tab-button active" data-tab="html">HTML</button>
+                <button class="tab-button" data-tab="css">CSS</button>
+               
+            </div>
+            
+            <div class="code-content">
+                <div id="htmlTab" class="code-tab active">
+                    <div class="code-header">
+                        <button class="copy-button"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    <pre id="htmlOutput"></pre>
+                </div>
+                
+                <div id="cssTab" class="code-tab">
+                    <div class="code-header">
+                        <button class="copy-button"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    <pre id="cssOutput"></pre>
+                </div>
+                
+                <div id="jsTab" class="code-tab">
+                    <div class="code-header">
+                        <button class="copy-button"><i class="far fa-copy"></i> Copy</button>
+                    </div>
+                    <pre id="jsOutput"></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
